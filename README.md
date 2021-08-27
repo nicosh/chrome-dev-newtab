@@ -8,6 +8,10 @@ A dev friendly new tab for Google Chrome.
 - Easy access to browser history ✅
 - Javascript sandbox ✅
 - Lighthouse integration ✅
-- Markdown editor ✅
+- Markdown editor (local storage data persistence) ✅
 - Trending posts from CS related subreddits ✅
 - Light and dark theme ⏳
+
+## Installation
+
+## Development

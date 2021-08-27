@@ -27,10 +27,11 @@ const SearchBar = () => {
         setSearchEngine(e.target.value);
     };
 
+    const searchEngineName = searchEngine === 1 ? "Google" : "Stackoverflow"
     return (
         <div className="row">
             <div className="col-md-12 mt-4">
-                <Search onSearch={onSearch} className="search" size="large" placeholder="Search on google" />
+                <Search onSearch={onSearch} className="search" size="large" placeholder={`Seacrh on ${searchEngineName}`} />
                 <Radio.Group onChange={onChange} defaultValue={searchEngine} className="mt-3 float-end">
                     <Radio value={1}>Google</Radio>
                     <Radio value={2}>Stackoverflow</Radio>
