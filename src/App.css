@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  height : 100vh;
+}
+
+.search .ant-input{
+  background-color: #fff; 
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%); 
+  border-color: rgba(223,225,229,0);
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  height: 52px;
+  text-align: center;
+}
+.search .ant-btn{
+  background-color: #fff; 
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%); 
+  border-color: rgba(223,225,229,0);
+  border-bottom-right-radius: 50px !important;
+  border-top-right-radius: 50px !important;
+  height: 52px;
+}
+.search .ant-input-group-addon {
+  background-color: transparent;
+}
+.delete-cache .ant-select-selector{
+  border-radius: 50px !important;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%) !important;
+  border-color: rgba(223,225,229,0) !important;
+  height: 42px !important;
+}
+
+.delete-cache .ant-select-selection-item{
+  border-radius: 50px !important;
+}
+.history-list{
+  height : 400px !important;
+  overflow : auto;
+  text-align: left;
+}
+.card{
+  border-radius: 14px;
+}
+.CodeMirror-wrap{
+  text-align: left;
+}
+.editor-toolbar .easymde-dropdown, .editor-toolbar button {
+
+  color: rgba(0,0,0,0.6);
+}
+

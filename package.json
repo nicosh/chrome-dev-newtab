@@ -1,0 +1,52 @@
+{
+  "name": "chrome-better-tab",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.16.13",
+    "easymde": "^2.15.0",
+    "npm-watch": "^0.11.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-simplemde-editor": "^5.0.1",
+    "watch": "^1.0.2",
+    "web-vitals": "^1.0.1"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,jsx"
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "bash  ./script/build.sh",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "watch": "npm-watch"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
