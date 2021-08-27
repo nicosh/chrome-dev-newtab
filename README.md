@@ -9,4 +9,5 @@ A dev friendly new tab for Google Chrome.
 - Javascript sandbox ✅
 - Lighthouse integration ✅
 - Markdown editor ✅
+- Trending posts from CS related subreddits ✅
 - Light and dark theme ⏳

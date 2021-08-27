@@ -24,7 +24,7 @@ const History = () => {
         <div className="col-md-4 mt-4">
             <div className="card p-5 text-start">
                 <span className="mb-4">{historyIcon} History</span>
-                <Timeline>
+                <Timeline style={{height : 534, overflowX : "auto", paddingTop : 5}}>
                     {history.map((item, index) => {
                         return (
                             <Timeline.Item   key={index}><a target="_blank" href={item.url}>{item.title ? item.title : item.url}</a></Timeline.Item>

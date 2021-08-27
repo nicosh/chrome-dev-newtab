@@ -10,6 +10,8 @@ import History from './components/history';
 import Editor from './components/editor'
 import LightHouse from './components/lighthouseWrapper';
 import Sandbox from './components/sandbox'
+import News from './components/news';
+
 const { TabPane } = Tabs;
 
 const App = () => {
@@ -33,6 +35,9 @@ const App = () => {
               </TabPane>
             </Tabs>
           </div>
+        </div>
+        <div className="row mb-5">
+           <News />
         </div>
       </div>
     </AppProvider>
