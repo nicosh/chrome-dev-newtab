@@ -31,7 +31,7 @@ const SearchBar = () => {
     return (
         <div className="row">
             <div className="col-md-12 mt-4">
-                <Search onSearch={onSearch} className="search" size="large" placeholder={`Seacrh on ${searchEngineName}`} />
+                <Search onSearch={onSearch} className="search" size="large" placeholder={`Search on ${searchEngineName}`} />
                 <Radio.Group onChange={onChange} defaultValue={searchEngine} className="mt-3 float-end">
                     <Radio value={1}>Google</Radio>
                     <Radio value={2}>Stackoverflow</Radio>

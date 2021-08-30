@@ -11,7 +11,7 @@ import Editor from './components/editor'
 import LightHouse from './components/lighthouseWrapper';
 import Sandbox from './components/sandbox'
 import News from './components/news';
-
+import Window from './components/misc/window';
 const { TabPane } = Tabs;
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
         <Search />
         <div className="row">
           <History />
-          <div className="col-md-8  mt-4">
+          <Window size="col-md-8">
             <Tabs className="card p-4" defaultActiveKey="1" >
               <TabPane tab="Javascript sandbox" key="1">
                 <Sandbox />
@@ -34,10 +34,10 @@ const App = () => {
                 <Editor />
               </TabPane>
             </Tabs>
-          </div>
+          </Window>
         </div>
         <div className="row mb-5">
-           <News />
+          <News />
         </div>
       </div>
     </AppProvider>

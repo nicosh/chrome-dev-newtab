@@ -69,6 +69,49 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
-
+}
+.window-buttons{
+  position: absolute;
+  z-index: 999;
+  top: 5px;
+  right: 20px;
 }
 
+/* Dark theme */
+.dark{
+  background-color: rgb(50, 41, 49) !important;
+  color : #fff !important;
+}
+.dark .card{
+  background-color: rgba(255,255,255,0.1); 
+}
+
+.dark .search .ant-input, .dark .search .ant-btn {
+  background-color: rgba(255,255,255,0.1); 
+}
+
+.dark .ant-select-selector{
+  background-color: rgba(255,255,255,0.1) !important; 
+}
+
+.dark  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: rgba(255,255,255,0.1) !important; 
+}
+
+.dark .ant-select-selection-item{
+  background-color: rgba(255,255,255,0.1) !important;
+  border: rgba(255,255,255,0.1) !important;
+  color: #fff;
+}
+
+.dark .ant-select-selection-item-remove{
+  color: #fff !important;
+}
+.dark .ant-select-dropdown{
+  background-color: #473f46 !important; 
+}
+
+.dark .ant-btn-primary {
+  border-color: rgba(255,255,255,0.1) !important;
+  background: rgba(255,255,255,0.1) !important;
+}

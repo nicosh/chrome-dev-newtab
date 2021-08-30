@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Chrome better tab",
-    "description": "A better google chrome tab",
+    "description": "A dev friendly new tab for Google Chrome",
     "version": "1.0",
     "author": "Nicolò cozzani",
     "chrome_url_overrides": {
