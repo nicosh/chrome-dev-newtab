@@ -1,6 +1,6 @@
 {
   "name": "chrome-better-tab",
-  "version": "v1.0.0",
+    "version": "v1.0.0",
   "private": true,
   "dependencies": {
     "@asseinfo/react-kanban": "^2.1.0",
@@ -8,7 +8,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.13",
-    "conventional-changelog-conventionalcommits": "^4.6.0",
     "easymde": "^2.15.0",
     "npm-watch": "^0.11.0",
     "react": "^17.0.2",
@@ -102,6 +101,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
-    "semantic-release": "^17.4.7"
+    "semantic-release": "^17.4.7",
+    "conventional-changelog-conventionalcommits": "^4.6.0"
   }
 }
