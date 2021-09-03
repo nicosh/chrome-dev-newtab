@@ -20,7 +20,7 @@ Google chrome extension that turn a new tab into a productive dashboard.
 
 ## Installation
 - Go to `chrome://extensions/` and check the box for Developer mode in the top right.
-- Download and unzip the last release
+- Download and unzip `extension.zip` from  the last release
 - Drag and drop the `dist` folder into extensions tab
 - Activate the extension
 ## Development
