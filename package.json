@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.13",
+    "conventional-changelog-conventionalcommits": "^4.6.0",
     "easymde": "^2.15.0",
     "npm-watch": "^0.11.0",
     "react": "^17.0.2",
@@ -33,26 +34,51 @@
     "eject": "react-scripts eject",
     "watch": "npm-watch"
   },
-  "release" : {
-    "branches": [ "main"],
+  "release": {
+    "branches": [
+      "main"
+    ],
     "plugins": [
-      ["@semantic-release/commit-analyzer", {
-        "preset": "conventionalcommits",
-        "releaseRules": [
-          {"type": "docs", "scope":"README", "release": "patch"},
-          {"type": "refactor", "release": "patch"},
-          {"type": "style", "release": "patch"}
-        ],
-        "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits",
+          "releaseRules": [
+            {
+              "type": "docs",
+              "scope": "README",
+              "release": "patch"
+            },
+            {
+              "type": "refactor",
+              "release": "patch"
+            },
+            {
+              "type": "style",
+              "release": "patch"
+            }
+          ],
+          "parserOpts": {
+            "noteKeywords": [
+              "BREAKING CHANGE",
+              "BREAKING CHANGES"
+            ]
+          }
         }
-      }],
+      ],
       "@semantic-release/release-notes-generator",
       "@semantic-release/github",
-      ["@semantic-release/git", {
-        "assets": ["dist/**/*.{js,css}", "docs", "package.json"],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }]
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "dist/**/*.{js,css}",
+            "docs",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
     ]
   },
   "eslintConfig": {
@@ -74,6 +100,8 @@
     ]
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "semantic-release": "^17.4.7"
   }
 }
