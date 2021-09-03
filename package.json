@@ -42,7 +42,7 @@
         "path": "@semantic-release/github",
         "assets": [
           {
-            "path": "dist/${nextRelease.version}.zip",
+            "path": "build/${nextRelease.version}.zip",
             "label": "version: ${nextRelease.version}"
           }
         ]
