@@ -68,11 +68,6 @@
       ],
       "@semantic-release/release-notes-generator",
       ["@semantic-release/github", {
-        "assets": [
-          {
-            "assets": "dist/*.zip"
-          }
-        ],
         "publish": [
           {
             "path": "@semantic-release/github",
