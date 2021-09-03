@@ -18,7 +18,6 @@ import 'simplebar/dist/simplebar.min.css';
 
 const { TabPane } = Tabs;
 
-
 const App = () => {
   return (
     <AppProvider>
