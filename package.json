@@ -37,17 +37,7 @@
     "branches": [
       "main"
     ],
-    "publish": [
-      {
-        "path": "@semantic-release/github",
-        "assets": [
-          {
-            "path": "build/${nextRelease.version}.zip",
-            "label": "version: ${nextRelease.version}"
-          }
-        ]
-      }
-    ],
+
     "plugins": [
       [
         "@semantic-release/commit-analyzer",
@@ -77,7 +67,9 @@
         }
       ],
       "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
+      ["@semantic-release/github", {
+        "assets": [ "dist/**"]
+      }]
     ]
   },
   "eslintConfig": {
