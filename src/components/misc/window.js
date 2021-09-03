@@ -13,7 +13,6 @@ const Window = ({ size, children }) => {
         e.preventDefault()
         setShow(false)
     }
-
     return (
         <div className={`${small ? "col-md-1" : size} mt-4 flex-grow-1 flex-fill window position-relative ${!show ? "d-none" : ""}`}>
             <div className="window-buttons">
