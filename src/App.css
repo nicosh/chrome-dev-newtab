@@ -45,6 +45,7 @@
   padding: 160px 45px 30px;
   box-shadow: 0 10px 40px rgb(0 0 0 / 10%);
   border: none;
+  min-height: 725px;
 }
 .CodeMirror-wrap{
   text-align: left;
@@ -75,6 +76,39 @@
   z-index: 999;
   top: 5px;
   right: 20px;
+}
+
+.repo-holder{
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding : 15px;
+  color : #57606a;
+}
+
+
+.repo-name{
+  color: #0969da;
+  font-weight: 600!important;
+  font-size: 14px;
+}
+
+.octicon {
+  fill: currentColor;
+  display: inline-block;
+  overflow: visible!important;
+  vertical-align: text-bottom;
+}
+
+.window{
+  min-height: 600px;
+}
+
+@media (max-width: 1400px) { 
+  .react-kanban-card , .react-kanban-card-adder-form, .react-kanban-card-skeleton {
+    box-sizing: border-box;
+    max-width: 170px !important;
+    min-width: 170px !important;
+  }
 }
 
 /* Dark theme */
@@ -115,3 +149,4 @@
   border-color: rgba(255,255,255,0.1) !important;
   background: rgba(255,255,255,0.1) !important;
 }
+

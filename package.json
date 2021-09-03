@@ -1,8 +1,9 @@
 {
   "name": "chrome-better-tab",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@asseinfo/react-kanban": "^2.1.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -13,6 +14,7 @@
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "react-simplemde-editor": "^5.0.1",
+    "simplebar-react": "^2.3.5",
     "watch": "^1.0.2",
     "web-vitals": "^1.0.1"
   },
@@ -31,6 +33,25 @@
     "eject": "react-scripts eject",
     "watch": "npm-watch"
   },
+  "release" : {
+    "branches": [
+      "main",
+      {
+        "name": "beta",
+        "prerelease": false
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      ["@semantic-release/git", {
+        "assets": ["dist/**"],
+        "message": "chore(release): set `package.json` to ${nextRelease.version} \n\n${nextRelease.notes}"
+
+      }]
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -48,5 +69,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "semantic-release": "^17.4.7"
   }
 }

@@ -15,7 +15,7 @@ const Window = ({ size, children }) => {
     }
 
     return (
-        <div className={`${small ? "col-md-1" : size} mt-4 flex-grow-1 flex-fill position-relative ${!show ? "d-none" : ""}`}>
+        <div className={`${small ? "col-md-1" : size} mt-4 flex-grow-1 flex-fill window position-relative ${!show ? "d-none" : ""}`}>
             <div className="window-buttons">
                 <a onClick={(e)=>{hide(e)} } className="me-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">

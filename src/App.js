@@ -12,6 +12,10 @@ import LightHouse from './components/lighthouseWrapper';
 import Sandbox from './components/sandbox'
 import News from './components/news';
 import Window from './components/misc/window';
+import Github from './components/misc/github';
+import Todo from './components/todo';
+import 'simplebar/dist/simplebar.min.css';
+
 const { TabPane } = Tabs;
 
 const App = () => {
@@ -21,17 +25,25 @@ const App = () => {
         <InfoBar />
         <Search />
         <div className="row">
-          <History />
-          <Window size="col-md-8">
+          <Window size="col-md-3">
+            <History />
+          </Window>
+          <Window size="col-md-9">
             <Tabs className="card p-4" defaultActiveKey="1" >
               <TabPane tab="Javascript sandbox" key="1">
                 <Sandbox />
               </TabPane>
+              <TabPane tab="Github" key="2">
+                <Github />
+              </TabPane>
               <TabPane tab="Lighthouse" key="3">
                 <LightHouse />
               </TabPane>
-              <TabPane tab="Notes" key="2">
+              <TabPane tab="Notes" key="4">
                 <Editor />
+              </TabPane>
+              <TabPane tab="Todo" key="5">
+                <Todo />
               </TabPane>
             </Tabs>
           </Window>
