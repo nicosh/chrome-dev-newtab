@@ -34,13 +34,7 @@
     "watch": "npm-watch"
   },
   "release" : {
-    "branches": [
-      "main",
-      {
-        "name": "beta",
-        "prerelease": false
-      }
-    ],
+    "branches": [ "main"],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
