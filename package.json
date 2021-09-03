@@ -37,6 +37,7 @@
     "branches": [
       "main"
     ],
+    
     "plugins": [
       [
         "@semantic-release/commit-analyzer",
@@ -67,7 +68,22 @@
       ],
       "@semantic-release/release-notes-generator",
       ["@semantic-release/github", {
-        "assets": [ "dist"]
+        "assets": [
+          {
+            "assets": "dist/*.zip"
+          }
+        ],
+        "publish": [
+          {
+            "path": "@semantic-release/github",
+            "assets": [
+              {
+                "path": "build/${nextRelease.version}.zip",
+                "label": "version: ${nextRelease.version}"
+              }
+            ]
+          }
+        ]
       }]
     ]
   },
