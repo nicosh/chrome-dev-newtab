@@ -14,3 +14,5 @@ Since Chrome apis cannot be used outside extension scope (chrome-extension://) y
 - Activate the extension
 - Start coding
 - Submit a PR
+
+Please follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) in your commit messages.
