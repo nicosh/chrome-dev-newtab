@@ -122,29 +122,30 @@
 /* Dark theme */
 
 .dark {
-  background-color: rgb(50, 41, 49) !important;
+  background-color: #121212 !important;
   color: #fff !important;
 }
 
 .dark .card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #272727;
 }
 
 .dark .search .ant-input, .dark .search .ant-btn {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #272727;
+  color: #fff;
 }
 
 .dark .ant-select-selector {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: #272727 !important;
 }
 
 .dark .ant-select:not(.ant-select-customize-input) .ant-select-selector {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: #272727 !important;
 }
 
 .dark .ant-select-selection-item {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  border: rgba(255, 255, 255, 0.1) !important;
+  background-color: #272727 !important;
+  border: #272727 !important;
   color: #fff;
 }
 
@@ -153,8 +154,8 @@
 }
 
 .dark .ant-btn-primary {
-  border-color: rgba(255, 255, 255, 0.1) !important;
-  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: #272727 !important;
+  background: #272727 !important;
 }
 
 .dark .ant-select-selection-item-remove, .dark .ant-progress-circle .ant-progress-text, .dark .ant-radio-wrapper, .dark .ant-tabs {
