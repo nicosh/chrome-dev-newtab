@@ -161,9 +161,10 @@
   color: #fff !important;
 }
 
-.dark .react-kanban-column {
+.dark .react-kanban-column, .dark .news-feed {
   background-color: #5e5e5e !important;
 }
-.dark h2, .dark a{
+
+.dark h2, .dark a {
   color: #fff !important
 }
