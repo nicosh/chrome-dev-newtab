@@ -131,8 +131,8 @@
 }
 
 .dark .search .ant-input, .dark .search .ant-btn {
-  background-color: #272727;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff !important;
 }
 
 .dark .ant-select-selector {
@@ -166,6 +166,6 @@
   background-color: #5e5e5e !important;
 }
 
-.dark h2, .dark a {
+.dark h2, .dark a, .dark h5, .dark code {
   color: #fff !important
 }
