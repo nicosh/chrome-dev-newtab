@@ -2,6 +2,11 @@
 A dev friendly new tab for Google Chrome.  
 Google chrome extension that turn a new tab into a productive dashboard.
 
+
+![Picture](https://user-images.githubusercontent.com/8511928/135485465-d1ae77b5-b735-4200-a9f1-7a2475930579.PNG)
+
+
+
 🚧 **features** 🚧 :  
 - Works offline ✅
 - Show memory and cpu usage ✅
@@ -14,7 +19,9 @@ Google chrome extension that turn a new tab into a productive dashboard.
 - Markdown editor (with local storage data persistence) ✅
 - Github ready ✅
 - Trending posts from CS related subreddits ✅
-- Light and dark theme ⏳
+- Light and dark theme ⏳  
+
+
 
 
 
