@@ -164,3 +164,6 @@
 .dark .react-kanban-column {
   background-color: #5e5e5e !important;
 }
+.dark h2{
+  color: #fff !important
+}

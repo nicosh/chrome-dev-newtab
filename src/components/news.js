@@ -41,9 +41,10 @@ const News = () => {
         loadData()
     }, [])
     return (
-        <div key={news.length} className="col-md-12 mt-4 mb-5 card p-5">
-            <h2>News</h2>
-            <div className="row">
+            <div key={news.length} className="row">
+                <div className="col-md-12">
+                    <h2>News</h2>
+                </div>
                 {news.map((el, index) => {
                     return (
                         <div key={index} className="col-md-3 p-3 mt-5">
@@ -59,7 +60,6 @@ const News = () => {
                 })}
 
             </div>
-        </div>
     )
 }
 export default News

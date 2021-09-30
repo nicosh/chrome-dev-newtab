@@ -50,7 +50,10 @@ const App = () => {
           </Window>
         </div>
         <div className="row mb-5">
-          <News />
+        <Window size="col-md-12 mt-4 mb-5 card p-5">
+        <News />
+
+        </Window>
         </div>
       </div>
     </AppProvider>
