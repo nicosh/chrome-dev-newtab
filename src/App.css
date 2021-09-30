@@ -160,3 +160,7 @@
 .dark .ant-select-selection-item-remove, .dark .ant-progress-circle .ant-progress-text, .dark .ant-radio-wrapper, .dark .ant-tabs {
   color: #fff !important;
 }
+
+.dark .react-kanban-column {
+  background-color: #5e5e5e !important;
+}
