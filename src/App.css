@@ -1,44 +1,49 @@
 .App {
   text-align: center;
-  height : 100vh;
+  height: 100vh;
 }
 
-.search .ant-input{
-  background-color: #fff; 
-  box-shadow: 0 1px 6px rgb(32 33 36 / 28%); 
-  border-color: rgba(223,225,229,0);
+.search .ant-input {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   height: 52px;
   text-align: center;
 }
-.search .ant-btn{
-  background-color: #fff; 
-  box-shadow: 0 1px 6px rgb(32 33 36 / 28%); 
-  border-color: rgba(223,225,229,0);
+
+.search .ant-btn {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
   border-bottom-right-radius: 50px !important;
   border-top-right-radius: 50px !important;
   height: 52px;
 }
+
 .search .ant-input-group-addon {
   background-color: transparent;
 }
-.delete-cache .ant-select-selector{
+
+.delete-cache .ant-select-selector {
   border-radius: 50px !important;
   box-shadow: 0 1px 6px rgb(32 33 36 / 28%) !important;
-  border-color: rgba(223,225,229,0) !important;
+  border-color: rgba(223, 225, 229, 0) !important;
   height: 42px !important;
 }
 
-.delete-cache .ant-select-selection-item{
+.delete-cache .ant-select-selection-item {
   border-radius: 50px !important;
 }
-.history-list{
-  height : 400px !important;
-  overflow : auto;
+
+.history-list {
+  height: 400px !important;
+  overflow: auto;
   text-align: left;
 }
-.card{
+
+.card {
   border-radius: 14px;
   background: white;
   border-radius: 15px;
@@ -47,46 +52,49 @@
   border: none;
   min-height: 725px;
 }
-.CodeMirror-wrap{
+
+.CodeMirror-wrap {
   text-align: left;
 }
-.editor-toolbar .easymde-dropdown, .editor-toolbar button {
 
-  color: rgba(0,0,0,0.6);
+.editor-toolbar .easymde-dropdown, .editor-toolbar button {
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.news-feed{
+.news-feed {
   position: relative;
-  border: 1px solid #f5f5f5;;
+  border: 1px solid #f5f5f5;
+  ;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.news-feed .labels{
-    position: absolute;
-    top: -50px;
-    background-color: #f5f5f5;
-    padding: 5px;
-    right: 0;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    width: 100%;
+
+.news-feed .labels {
+  position: absolute;
+  top: -50px;
+  background-color: #f5f5f5;
+  padding: 5px;
+  right: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
 }
-.window-buttons{
+
+.window-buttons {
   position: absolute;
   z-index: 999;
   top: 5px;
   right: 20px;
 }
 
-.repo-holder{
+.repo-holder {
   border: 1px solid #d0d7de;
   border-radius: 6px;
-  padding : 15px;
-  color : #57606a;
+  padding: 15px;
+  color: #57606a;
 }
 
-
-.repo-name{
+.repo-name {
   color: #0969da;
   font-weight: 600!important;
   font-size: 14px;
@@ -99,12 +107,12 @@
   vertical-align: text-bottom;
 }
 
-.window{
+.window {
   min-height: 600px;
 }
 
-@media (max-width: 1400px) { 
-  .react-kanban-card , .react-kanban-card-adder-form, .react-kanban-card-skeleton {
+@media (max-width: 1400px) {
+  .react-kanban-card, .react-kanban-card-adder-form, .react-kanban-card-skeleton {
     box-sizing: border-box;
     max-width: 170px !important;
     min-width: 170px !important;
@@ -112,44 +120,43 @@
 }
 
 /* Dark theme */
-.dark{
+
+.dark {
   background-color: rgb(50, 41, 49) !important;
-  color : #fff !important;
+  color: #fff !important;
 }
-.dark .card{
-  background-color: rgba(255,255,255,0.1); 
+
+.dark .card {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .dark .search .ant-input, .dark .search .ant-btn {
-  background-color: rgba(255,255,255,0.1); 
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.dark .ant-select-selector{
-  background-color: rgba(255,255,255,0.1) !important; 
+.dark .ant-select-selector {
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-.dark  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
-  background-color: rgba(255,255,255,0.1) !important; 
+.dark .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-.dark .ant-select-selection-item{
-  background-color: rgba(255,255,255,0.1) !important;
-  border: rgba(255,255,255,0.1) !important;
+.dark .ant-select-selection-item {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: rgba(255, 255, 255, 0.1) !important;
   color: #fff;
 }
 
-.dark .ant-select-selection-item-remove{
-  color: #fff !important;
-}
-.dark .ant-select-dropdown{
-  background-color: #473f46 !important; 
+.dark .ant-select-dropdown {
+  background-color: #473f46 !important;
 }
 
 .dark .ant-btn-primary {
-  border-color: rgba(255,255,255,0.1) !important;
-  background: rgba(255,255,255,0.1) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
-.dark .ant-progress-circle .ant-progress-text{
+.dark .ant-select-selection-item-remove, .dark .ant-progress-circle .ant-progress-text, .dark .ant-radio-wrapper, .dark .ant-tabs {
   color: #fff !important;
 }
