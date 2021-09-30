@@ -28,7 +28,7 @@ const Todo = () => {
   const [board, setBoard] = useState(false)
 
   useEffect(() => {
-    let savedBoard = localStorage.getItem("board") ? localStorage.getItem("board") : defaultBoard;
+    let savedBoard = localStorage.getItem("board") ? localStorage.getItem("board") : JSON.stringify(defaultBoard);
     setBoard(JSON.parse(savedBoard))
   }, [])
 
