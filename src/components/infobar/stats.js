@@ -4,9 +4,12 @@
 import { useEffect, useState } from "react"
 import { Progress,Switch  } from 'antd';
 import { useApp } from "../context/appContext";
+import useInterval from "./useInterval";
 const Stats = () => {
     const [memoryPercentage, setMemoryrcentage] = useState(false)
-    const [cpuPercentage, setCpuPercentage] = useState(false)
+    const [cpuPercentage, setCpuPercentage] = useState(0)
+    const [previousCpuInfo,setPreviousCpuInfo]= useState(false)
+
     const {theme,switchTeme } = useApp()
 
     // load memory and cpu usage from chrome apis
@@ -18,22 +21,30 @@ const Stats = () => {
         });
 
         chrome.system.cpu.getInfo(function (info) {
-            let totalUsage = info.processors.reduce((acc, el, index) => {
-                let used = Math.floor((el.usage.kernel + el.usage.user) / el.usage.total * 100);
-                acc += used
-                return acc
-            }, 0)
-            setCpuPercentage(totalUsage)
+            let totalp = 0
+            info.processors.forEach((el,index)=>{
+                let percentage = 0;
+                let usage = el.usage;
+                if (previousCpuInfo) {
+                    let oldUsage = previousCpuInfo.processors[index].usage;
+                    percentage = Math.floor((usage.kernel + usage.user - oldUsage.kernel - oldUsage.user) / (usage.total - oldUsage.total) * 100);
+                  } else {
+                    percentage = Math.floor((usage.kernel + usage.user) / usage.total * 100);
+                  }
+                totalp+= percentage
+            })
+            let p =  Math.floor(totalp/info.processors.length)
+            if(p > 0){
+                setCpuPercentage(p) // prevent flashing
+            }
+            setPreviousCpuInfo(info)
+
         });
     }
 
-    useEffect(() => {
+    useInterval(() => {
         loadData()
-        const interval = setInterval(() => {
-            loadData()
-        }, 1000);
-        return () => clearInterval(interval);
-    }, [])
+    }, 1000);
 
 
     return (
