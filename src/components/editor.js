@@ -7,9 +7,10 @@ const Editor = ()=>{
     const [notes, setNotes] = useState("")
 
     useEffect(()=>{
-        let text = "Write something...";
-        chrome.storage.local.get('notestext', (res) => text = res.notestext || "Write something...");
-        setNotes(text)
+        chrome.storage.local.get('notestext', (res) =>{
+            let txt = res.notestext || "Write something..."
+            setNotes(txt)
+        });
     },[])
 
     const onChange = (value) => {
