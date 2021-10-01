@@ -62,6 +62,7 @@ const Github = () => {
                 }
                 if (n) {
                     localStorage.setItem('git_username', n)
+                    
                 } else {
                     localStorage.removeItem("git_username");
                 }

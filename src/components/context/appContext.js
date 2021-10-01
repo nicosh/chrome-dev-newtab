@@ -4,7 +4,8 @@ import React, { useState, useContext, useEffect } from 'react'
 export const AppContext = React.createContext(null)
 
 export function AppProvider({ children, ...rest }) {
-    const currentTheme =  localStorage.getItem("theme") || "light";
+    let currentTheme = "light";
+    chrome.storage.local.get('theme', (thm) => currentTheme = thm.theme);
     const [history,setHistory] = useState([])
     const [theme,setTheme] = useState(currentTheme)
 
@@ -22,7 +23,7 @@ export function AppProvider({ children, ...rest }) {
         let newTheme = theme === "light" ? "dark" : "light"
         document.body.classList.add(newTheme);
         document.body.classList.remove(theme);
-        localStorage.setItem('theme', newTheme);
+        chrome.storage.local.set({'theme': newTheme});
         setTheme(newTheme)
     }
 
