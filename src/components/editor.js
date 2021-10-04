@@ -7,12 +7,14 @@ const Editor = ()=>{
     const [notes, setNotes] = useState("")
 
     useEffect(()=>{
-        let text = localStorage.getItem("notestext") || "Write something...";
-        setNotes(text)
+        chrome.storage.local.get('notestext', (res) =>{
+            let txt = res.notestext || "Write something..."
+            setNotes(txt)
+        });
     },[])
 
     const onChange = (value) => {
-        localStorage.setItem('notestext', value);
+        chrome.storage.local.set({'notestext': value});
         setNotes(value);
     };
     return <SimpleMDE value={notes} onChange={onChange} />

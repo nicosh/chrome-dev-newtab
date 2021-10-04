@@ -32,7 +32,7 @@ const Todo = () => {
     setBoard(JSON.parse(savedBoard))
   }, [])
 
-  
+
   const handleCardMove = (board) => {
     let newBoard = JSON.stringify(board)
     localStorage.setItem('board', newBoard);
