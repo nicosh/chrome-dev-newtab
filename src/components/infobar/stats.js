@@ -42,6 +42,9 @@ const Stats = () => {
         });
     }
 
+    useEffect(()=>{
+        loadData()
+    },[])
     useInterval(() => {
         loadData()
     }, 1000);
