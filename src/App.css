@@ -122,7 +122,7 @@
 /* Dark theme */
 
 .dark {
-  background-color: #1C1C1C !important;
+  background-color: #121212 !important;
   color: #fff !important;
 }
 
@@ -139,7 +139,7 @@
 }
 
 .dark .ant-select-selector {
-  background-color: #333333 !important;
+  background-color: #272727 !important;
 }
 
 .dark .ant-select:not(.ant-select-customize-input) .ant-select-selector {
@@ -147,8 +147,8 @@
 }
 
 .dark .ant-select-selection-item {
-  background-color: #1890FF !important;
-  border: #1890FF !important;
+  background-color: rgb(94, 94, 94) !important;
+  border: #272727 !important;
   color: #fff;
 }
 
