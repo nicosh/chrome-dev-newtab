@@ -127,7 +127,7 @@
 }
 
 .dark .card {
-  background-color: #272727!important;
+  background-color: #282828!important;
 }
 .dark .labels {
   color: #fff;
@@ -143,7 +143,7 @@
 }
 
 .dark .ant-select:not(.ant-select-customize-input) .ant-select-selector {
-  background-color: #272727 !important;
+  background-color: #333333 !important;
 }
 
 .dark .ant-select-selection-item {
@@ -171,6 +171,7 @@
 }
 
 .dark .react-kanban-column {
+  border-radius: 10px;
   background-color: #121212!important;
 }
 .dark .news-feed{
