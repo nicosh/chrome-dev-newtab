@@ -158,7 +158,7 @@
   background: #272727 !important;
 }
 
-.dark .ant-select-selection-item-remove, .dark .ant-progress-circle .ant-progress-text, .dark .ant-radio-wrapper, .dark .ant-tabs {
+.dark .ant-select-selection-item-remove, .dark .ant-progress-circle .ant-progress-text, .dark .ant-radio-wrapper, .dark .ant-tabs ,.dark .ant-checkbox-wrapper{
   color: #fff !important;
 }
 
