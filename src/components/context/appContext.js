@@ -6,12 +6,13 @@ export const AppContext = React.createContext(null)
 export function AppProvider({ children, ...rest }) {
     let currentTheme = "light";
     const [history, setHistory] = useState([])
-    const [theme, setTheme] = useState(currentTheme)
+    const [theme, setTheme] = useState(false)
 
     useEffect(() => {
         chrome.storage.local.get('theme', (thm) => {
-            setTheme(thm.theme ? thm.theme : currentTheme)
-            document.body.classList.add(thm.theme ? thm.theme : currentTheme);
+            let tm = thm.theme ? thm.theme : currentTheme
+            setTheme(tm)
+            document.body.classList.add(tm);
         });
     }, [])
 

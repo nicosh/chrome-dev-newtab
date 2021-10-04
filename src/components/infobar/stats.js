@@ -11,7 +11,6 @@ const Stats = () => {
     const [previousCpuInfo,setPreviousCpuInfo]= useState(false)
 
     const {theme,switchTeme } = useApp()
-
     // load memory and cpu usage from chrome apis
     const loadData = () => {
         chrome.system.memory.getInfo(function (info) {
@@ -57,7 +56,7 @@ const Stats = () => {
                 <Progress width={50} type="circle" percent={memoryPercentage} />
                 <label style={{ fontSize: 12 }} className="ms-3 me-3">Cpu used : </label>
                 <Progress width={50} type="circle" percent={cpuPercentage} />
-                <Switch onChange={switchTeme} className="ms-3 me-3" checkedChildren="🌙" unCheckedChildren="🌙" defaultChecked={theme !== "light"} />
+                <Switch key={theme} onChange={switchTeme} className="ms-3 me-3" checkedChildren="🌙" unCheckedChildren="🌙" defaultChecked={theme !== "light"} />
             </div>
             :
             <div className="col-md-6 offset-md-6 text-end">

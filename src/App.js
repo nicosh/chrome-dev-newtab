@@ -16,8 +16,7 @@ import Github from './components/misc/github';
 import Todo from './components/todo';
 import 'simplebar/dist/simplebar.min.css';
 
-const { TabPane } = Tabs;
-
+const { TabPane } = Tabs; 
 
 const App = () => {
   return (
@@ -51,8 +50,7 @@ const App = () => {
         </div>
         <div className="row mb-5">
         <Window size="col-md-12 mt-4 mb-5 card p-5">
-        <News />
-
+          <News />
         </Window>
         </div>
       </div>
