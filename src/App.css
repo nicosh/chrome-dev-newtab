@@ -111,8 +111,41 @@
   min-height: 600px;
 }
 
+.react-kanban-card-adder-form {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.react-kanban-card-adder-form__title {
+  border-radius: 2px;
+  color: black;
+}
+
+.react-kanban-card-adder-form__description {
+  border-radius: 2px;
+  color: black;
+}
+
+.react-kanban-card-adder-form__button {
+  color: black;
+}
+
+.react-kanban-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: white;
+  box-sizing: border-box;
+  max-width: 170px !important;
+  min-width: 170px !important;
+}
+
 @media (max-width: 1400px) {
   .react-kanban-card, .react-kanban-card-adder-form, .react-kanban-card-skeleton {
+    border: 2px;
+    background-color: black;
     box-sizing: border-box;
     max-width: 170px !important;
     min-width: 170px !important;
