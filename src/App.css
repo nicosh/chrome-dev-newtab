@@ -122,12 +122,12 @@
 /* Dark theme */
 
 .dark {
-  background-color: #121212 !important;
+  background-color: #1C1C1C !important;
   color: #fff !important;
 }
 
 .dark .card {
-  background-color: #272727!important;
+  background-color: #282828!important;
 }
 .dark .labels {
   color: #fff;
@@ -139,16 +139,16 @@
 }
 
 .dark .ant-select-selector {
-  background-color: #272727 !important;
+  background-color: #333333 !important;
 }
 
 .dark .ant-select:not(.ant-select-customize-input) .ant-select-selector {
-  background-color: #272727 !important;
+  background-color: #333333 !important;
 }
 
 .dark .ant-select-selection-item {
-  background-color: rgb(94, 94, 94) !important;
-  border: #272727 !important;
+  background-color: #1890FF !important;
+  border: #1890FF !important;
   color: #fff;
 }
 
@@ -171,6 +171,7 @@
 }
 
 .dark .react-kanban-column {
+  border-radius: 10px;
   background-color: #121212!important;
 }
 .dark .news-feed{
