@@ -1,4 +1,8 @@
-.App {
+body{
+  transition: background-color .5s ease,color .5s ease;
+
+}
+App {
   text-align: center;
   height: 100vh;
 }
@@ -138,8 +142,7 @@
   border: 1px solid rgba(255, 255, 255, 0.125);
   color: white;
   box-sizing: border-box;
-  max-width: 170px !important;
-  min-width: 170px !important;
+
 }
 
 @media (max-width: 1400px) {
